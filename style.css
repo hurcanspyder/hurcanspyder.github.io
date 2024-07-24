@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1 {
+    text-align:top;
+    font-size: 59px;
+    
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, #f7f7f8, #ec008c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 1px;
+    margin-bottom: 60px;
+    margin-left: -20px;
+     
+    
+}
+
+header {
+    padding: 40px;
+    background-color: #000000;
+}
+h2{
+    position:initial;
+    font-size: 30px;
+    color: aliceblue;
+
+}
+
+nav {
+    background-color: #000000;
+    overflow: hidden;
+    /* border: 10px solid rgb(95, 12, 12); */
+
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+    font-size: 17px;
+    
+    
+    
+   
+  
+}
+/* #Markets:hover{
+    background-color: rgb(152, 158, 158);
+    border-radius: 100px; */
+    
+/* }
+} */
+#Markets:hover,#Home:hover,#Chatrooms:hover,#Universities:hover,#Ranks:hover,#News:hover,#Strategy:hover{
+    border-radius: 100px;
+   
+    background-color: grey;
+    
+   
+}
+nav a:hover{
+    color:rgb(254, 254, 254)
+    
+    
+    
+    
+}
+/* nav a:visited{                                   ye hm tb likthe ha jb hame dikhana ho ki ye visit ho gyaa ha
+    color: green;
+} */
+
+main {
+    background-color: #000000;
+    text-align:center;
+    font-size: 40px;
+    
+    
+    
+}
+.search-bar{
+    border-radius: 100px;
+    font-size: 20px;
+    background-color: #ffffff;
+    transition: width 0.5s;
+    width: 150px;
+    
+}
+.search-bar:hover{
+    width:300px;
+
+}
+
+.Tagline{
+    font-size: 110px;
+    
+    font-weight: bold;
+    background: linear-gradient(90deg, #00b3ff, #ec008c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 40px;
+    margin-bottom:40px;
+    
+    
+}
+
+
+h2 {
+    padding: 20px;
+    
+}
+button{
+    background-color: #000000;
+    color:rgb(255, 251, 251);
+    font-size: 20px;
+    padding: 10px;
+    text-shadow: 2px;
+    
+    cursor: pointer;
+    margin:4px 2px;
+    border-radius: 100px;
+    margin-inline-start: auto;
+    
+
+}
+button:hover{
+    color: rgb(255, 255, 255);
+    background-color: grey;
+}
+section:nth-child(even) {
+    background-color: rgb(241, 241, 241);
+}
+
+section {
+    min-height: 100vh;
+}
+
+video {
+    padding: 10px;
+}
+
+iframe {
+    height: 75vh;
+}
+
+
+img {
+    padding: 10px;
+}
+
+section h5 {
+    margin: 40px;
+}
+
+footer {
+    background-color: #333;
+    overflow: hidden;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+#user{
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+        
+}
+input{
+    border: none;
+    padding: 7px;
+}
+
+.hey{
+    font-size: 25px;
+    align-self: center;
+    color: #ffffff;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, #f7f7f8, #e57dbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 770px;
+    left: 110px;
+    animation: hey 3s ease 0s 1 alternate both;
+
+    
+
+}
+.phone{
+    margin-top: -250px;
+    
+    
+    
+    transition: transform 2s;
+    animation: phone 2s ease  0s 1 alternate both ;
+    
+    
+
+}
+    /* .phone:{
+    transform: rotate(90deg);
+    width: 400px;
+    height: 700px;
+    margin-left: 300px;
+    
+}  */
+    @keyframes phone{
+    0%{
+        width: 300px;
+    }
+    100%{
+        transform: rotate(90deg);
+        width: 500px;
+        height: 700px;
+        margin-left: 50px;
+        margin-top: -400px;
+    }
+} 
+@keyframes hey{
+    0%{
+
+    }
+    50%{
+        position: absolute;
+        top: 820px;
+    }
+    100%{
+        position:absolute;
+        top: 690px;
+        left: 60px;
+        
+        
+        
+        
+    }
+}
+.about{
+    color: #ffffff;
+    position: absolute;
+    top: 700px;
+    left: 300px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 950px;
+    padding: 10px;
+    font-size:40px;
+    animation: hii 1.8s ease 0s 1 alternate both;
+    border: 3px;
+    
+    border-radius: 20px;
+    border: 0.1px solid ;
+    border-color:gray;
+    
+    
+
+}
+@keyframes hii{
+    0%{
+        position: absolute;
+        left: 300px;
+        width:950px
+        
+    }
+    100%{
+        position: absolute;
+        left: 700px;
+        width:550px;
+        
+    }
+}
+
+p{
+    color: #f7f7f8;
+}
+.video{
+    
+    position: absolute;
+    top: 730px;
+    left:65px;
+    animation: video 1s ease 2s 1 alternate both;
+    width: 1px;
+    height:1px;
+    cursor: pointer;
+    
+    
+}
+@keyframes video {
+    0%{
+        top: 730px;
+        left:65px;
+        width:1px;
+    }
+    100%{
+        width: 570px;
+        height: 300px;
+    }
+    
+}
+.about-chatroom{
+    border: 1px solid gray;
+    border-radius: 20px;
+    background: none;
+    width: 550px;
+    height: 800px;
+    padding: 20px;
+    
+    
+    
+    
+}
+.about-chatroom1{
+    border: 1px solid gray;
+    border-radius: 20px;
+    background: none;
+    width: 550px;
+    height: 800px;
+    padding: 5px;
+    position: relative;
+    left: 600px;
+    top: -817px;
+    padding: 20px;
+}

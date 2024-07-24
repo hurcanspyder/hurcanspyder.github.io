@@ -1,0 +1,249 @@
+:root{
+  --primary-color: linear-gradient(45deg, cyan , red);
+  --secondary-color: lightyellow;
+  --accent-color: rgb(0, 0, 0);
+  --neutral-b: rgba(17, 43, 128, 0.958);
+  --neutral-a: lightgray
+}
+body {
+  background: var(--neutral-b);
+  background-color: rgb(0, 0, 0);
+}
+.header {
+  font-family: Sans-Serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5%;
+  padding: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.title {
+  font-size: 40px;
+  color: #986a6a;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffffff, #f949b3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+    
+
+}
+.search-bar {
+  width: 250px;
+  height:45px;
+  padding: 10px 15px;
+  border: var(--secondary-color) solid 1px;
+  border-radius: 50px;
+  transition: width 0.5s,font-size 0.5s;
+  cursor: pointer;
+}
+.search-bar:hover{
+  
+  width:350px;
+  font-size: 20px;
+}
+.search-div {
+  display: flex;
+  gap: 20px;
+  font: arial;
+}
+nav {
+  display: flex;
+  gap: 3%;
+  padding: 10px 10px 0 10px;
+
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 5px;
+  color: var(--secondary-color);
+}
+.nav-item:hover {
+  background: gray;
+}
+.nav-item{
+  font-size:19px;
+  padding: 10px;
+}
+.torso {
+  width: 80%;
+  margin: 0 10%;
+}
+.tickers-list {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.ticker-item {
+  display: inline-block;
+  background: rgba(42, 42, 45, 0.619);
+  border-radius: 400px;
+  padding: 15px;
+  /* Adjust padding as needed */ 
+  margin: 0 10px;
+  font-size: 15px;
+  color: #e4e4e4;
+  cursor: pointer;
+  
+}
+.ticker-item:hover{
+  background-color: gray;
+  color: rgb(0, 0, 0);
+}
+.ticker-logo {
+  display: inline-block;
+  vertical-align: middle;
+  background: #e4e4e4;
+  border-radius: 100px;
+}
+.ticker-name,
+.ticler-percentage {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+  /* Adjust margins as needed */
+}
+.live-matches-button-div {}
+.live-matches-button {
+  color: gold;
+  display: inline-block;
+  border-radius: 30px;
+  height: 24px;
+  margin: 20px;
+  border-top: 2px solid goldenrod;
+  /* Top border in golden color */
+  border-left: 2px solid goldenrod;
+  /* Left border in golden color */
+  border-bottom: 2px solid black;
+  /* No bottom border */
+  border-right: 2px solid black;
+  /* No right border */
+  padding: 5px;
+  /* Add some padding for better visibility */
+}
+.live-matches-button:hover {
+  border-top: 2px solid gold;
+  /* Top border in golden color */
+  border-left: 2px solid gold;
+  /* Left border in golden color */
+  border-bottom: 2px solid gold;
+  /* No bottom border */
+  border-right: 2px solid gold;
+  /* No right border */
+
+}
+.table-n-chart {
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: auto;
+  gap: 30px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.chart-div {
+  display: grid;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+
+}
+.chart-setting {
+  display: flex;
+  color: gray;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50px;
+}
+.chart-setting a {
+  padding: 0 10px;
+  margin: 0 5px;
+  color: aliceblue;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: rgba(42, 42, 45, 0.619);
+  cursor: pointer;
+}
+.chart-item:hover{
+  background-color:gray ;
+  color: black;
+  
+}
+.chart-item{
+  font-size: 20px;
+}
+
+.table {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  width: 100%;
+  height: 100%;
+  padding: 5% 0 10% 0;
+  position: relative;
+  bottom:80px;
+  left: 100px;
+}
+
+.table thead {
+  height: 100px;
+  border: solid 1px;
+}
+.table th {
+  color: white;
+  padding: 10px;
+  background: rgb(15, 15, 30);
+}
+.table td {
+  padding: 5px 10px;
+  color: gray;
+  background: rgb(19, 19, 28);
+}
+.desc {
+  font-family: Arial;
+  color: var(--secondary-color);
+  font-size: 15px;
+}
+.floating-bar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  bottom: 20px;
+  right: 200px;
+  width: 15%;
+}
+.floating-bar button {
+  outline: none;
+  background: #986a6a;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+
+
+
+@media screen and (max-width: 728px) {
+  .search-bar {
+    width: 150px;
+  }
+  .torso {
+    width: 90vw;
+    margin: 10px;
+  }
+  .table-n-chart {
+    grid-template-columns: 1fr;
+  }
+  .table {
+    width: 95%;
+  }
+  .desc {}
+  .floating-bar {
+    flex-direction: column;
+    right: 20px;
+    height: 15%;
+  }
+}

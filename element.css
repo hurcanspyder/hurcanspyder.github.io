@@ -1,0 +1,29 @@
+p{
+    color: red;
+}
+li{
+    list-style: square;
+}
+.special{
+    color: orange;
+    font-weight: bold;
+}
+span.special,li.special{
+    color: blue;
+}
+a:hover{
+    color: gold;
+    text-decoration: none;
+}
+table,th,tr,thead,td{
+    border: 1px solid black;
+    padding: 10px ;
+    border-collapse: collapse;
+  
+}
+th{
+    background-color: aquamarine;
+}
+td{
+    background-color: bisque;
+}

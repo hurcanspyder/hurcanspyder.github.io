@@ -1,0 +1,161 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="markets.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="title">
+      MockMarkets
+    </div>
+    <div class="search-div">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" /></svg> -->
+      <input class="search-bar" type="text" placeholder="Search...">
+    </div>
+  </div>
+  <div class="nav-div">
+    <nav>
+      <a class="nav-item" href="#crypto">Crypto</a>
+      <a class="nav-item" href="#forex">Forex</a>
+      <a class="nav-item" href="#commodities">Commodities</a>
+    </nav>
+    <hr style="margin: 0 0 20px 0">
+  </div>
+  <div class="torso">
+    <div class="tickers-list">
+      <div class="ticker-item">
+        <div class="ticker-logo">
+          <img src="bitcoin_PNG7.png" width="30px">
+        </div>
+        <span>Bitcoin</span>
+        <span class="ticler-percentage">+3%</span>
+      </div>
+      <div class="ticker-item">
+        <div class="ticker-logo">
+          <img src="doge.png" width="30px">
+        </div>
+        <span>doge</span>
+        <span class="ticler-percentage">+33%</span>
+
+      </div>
+      <div class="ticker-item">
+        <div class="ticker-logo">
+          <img src="Ethereum-ETH-icon.png" width="30px">
+        </div>
+        <span>etherium</span>
+        <span class="ticler-percentage">-1%</span>
+      </div>
+      <div class="ticker-item">
+        <div class="ticker-logo">
+          <img src="th.png" width="30px">
+        </div>
+        <span>tether</span>
+        <span class="ticler-percentage">+7%</span>
+      </div>
+      <div class="ticker-item">
+        <div class="ticker-logo ">
+          <img src="dollar-sign-icon-png-22.png" width="30px">
+        </div>
+        <span class="ticker-name">USD coin</span>
+        <span class="ticler-percentage">+22%</span>
+      </div>
+    </div>
+    <div class="live-matches-button-div">
+      <a class="live-matches-button">Live matches</a>
+    </div>
+    <section class="table-n-chart">
+      <div class="chart-div">
+        <canvas id="floating-bars-chart"></canvas>
+        <div class="chart-setting">
+          <a class="chart-item">1D</a>
+          <a class="chart-item">1M</a>
+          <a class="chart-item">3M</a>
+          <a class="chart-item">1Y</a>
+          <a class="chart-item">5Y</a>
+          <a class="chart-item">All</a>
+        </div>
+      </div>
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Symbol</td>
+              <th>Last</td>
+              <th>Change</td>
+              <th>%Change</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bitcoin</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Etherium</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Doge</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Reliance</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>QWE</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>RTY</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>IOP</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <div id="desc-div">
+      <hr>
+      <p class="desc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores doloribus voluptatibus fuga nulla rerum, porro nihil ipsum blanditiis deserunt enim, reiciendis consequuntur rem. Maxime, adipisci necessitatibus molestias iste doloremque, officiis deserunt iusto rem blanditiis ipsa quos, cumque veniam natus! Cumque praesentium qui quae reiciendis cum, maxime atque odit explicabo voluptatum rem, eveniet saepe quos ipsam beatae culpa sint voluptatibus aut! Sequi, cum illum ipsam autem aut suscipit sed, nesciunt, accusamus ipsum dolor a, facilis animi totam optio ducimus. Suscipit sunt dignissimos a illum vel, modi dolor corporis numquam quasi quo corrupti pariatur, fugit voluptas! Nihil natus beatae, recusandae error doloremque.
+      </p>
+      <p class="desc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, necessitatibus pariatur laborum repudiandae amet sit beatae, iure vero architecto fuga? Et facilis rem facere, similique pariatur iusto debitis minus, maxime, fugiat ab, enim molestiae. Eius sit voluptatem molestiae perspiciatis repudiandae vel quia distinctio sunt expedita, omnis obcaecati odit officiis. Nesciunt, nobis nemo tempore ipsa amet incidunt ratione. Obcaecati facere, laudantium cupiditate non tempore explicabo sapiente exercitationem corporis doloremque tenetur nobis reiciendis quia distinctio, totam cumque? Dicta distinctio maiores enim, in animi accusantium dolore sapiente id voluptas consequatur? Quos, odit. Sequi illo iusto quas rem vitae impedit officiis earum quia non.
+      </p>
+      <p class="desc">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eum corporis voluptatem, sunt, ex commodi rem sapiente odit laudantium asperiores iure ratione. Soluta, corporis omnis unde perspiciatis recusandae dolores delectus odit vero ducimus natus repellat iusto, beatae temporibus eaque iste minima ab aliquid corrupti labore illum deleniti est ipsa. Iure, consequuntur quos repellat libero, omnis voluptates mollitia necessitatibus ipsum! Optio voluptas placeat eos voluptatem repudiandae quos inventore dolore in voluptates repellendus praesentium voluptatibus voluptate neque porro suscipit fugit possimus quam cum repellat quaerat velit fugiat, esse vitae. Error, earum, ipsam eum sit libero similique eligendi quia sunt iste, tempore porro.
+      </p>
+    </div>
+    <div class="floating-bar">
+      <button>↩️</button>
+      <button>↪️️</button>
+      <button>✋</button>
+      <button>⏳</button>
+    </div>
+  </div>
+  <script src="markets.js"></script>
+  <source>
+</body>
+</html>
